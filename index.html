@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE Guidelines: New-Onset/Acute AF ED Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Using Inter as a common, clean font */
+        }
+        .infographic-header {
+            background-color: #005EB8; /* NICE Blue */
+            color: white;
+        }
+        .section-card {
+            background-color: white;
+            border-radius: 0.75rem; /* 12px */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+        .section-title {
+            color: #005EB8; /* NICE Blue */
+            border-bottom: 2px solid #007F3B; /* NICE Green */
+            padding-bottom: 0.5rem;
+        }
+        .icon-style {
+            color: #007F3B; /* NICE Green */
+        }
+        .key-point {
+            background-color: #E8F4FA; /* Light NICE Blue */
+            border-left: 4px solid #005EB8; /* NICE Blue */
+        }
+        .alert-point {
+            background-color: #FFF9E6; /* Light NICE Yellow */
+            border-left: 4px solid #FFB81C; /* NICE Yellow */
+        }
+         .disposition-green {
+            background-color: #E6F5ED; /* Light NICE Green */
+            border-left: 4px solid #007F3B; /* NICE Green */
+        }
+        .disposition-red {
+            background-color: #FAEBEB; /* Light NICE Red */
+            border-left: 4px solid #DA291C; /* NICE Red */
+        }
+        .sub-section-title {
+            color: #005EB8;
+            font-weight: 600;
+            margin-top: 0.75rem;
+            margin-bottom: 0.25rem;
+        }
+        .score-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.875rem; /* text-sm */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .infographic-header h1 {
+                font-size: 1.5rem; /* 24px */
+            }
+            .section-title {
+                font-size: 1.125rem; /* 18px */
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <div class="infographic-header p-6 md:p-10 text-center rounded-b-xl shadow-lg">
+        <h1 class="text-2xl md:text-4xl font-bold mb-2"><i class="fas fa-heart-pulse mr-3"></i>NICE Guideline Summary:</h1>
+        <h2 class="text-xl md:text-3xl font-semibold">Management of New-Onset or Acute Atrial Fibrillation in the ED</h2>
+        <p class="text-sm md:text-base mt-2 text-blue-200">Based on general NICE principles for UK Emergency Medicine Practice (NG196)</p>
+    </div>
+
+    <div class="container mx-auto p-4 md:p-8 space-y-8">
+
+        <section class="section-card p-6">
+            <h2 class="text-xl md:text-2xl font-bold section-title mb-4 flex items-center">
+                <i class="fas fa-user-md icon-style mr-3 text-2xl"></i>Initial Assessment & Management
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="key-point p-4 rounded-lg">
+                    <h3 class="font-semibold text-lg mb-1 text-blue-700">Assess Haemodynamic Stability</h3>
+                    <p class="text-sm text-gray-700"><i class="fas fa-exclamation-triangle mr-2 text-red-500"></i><strong>If unstable (shock, syncope, myocardial ischaemia, severe heart failure):</strong> Emergent electrical cardioversion. Seek expert help immediately.</p>
+                </div>
+                <div class="key-point p-4 rounded-lg">
+                    <h3 class="font-semibold text-lg mb-1 text-blue-700">Identify & Treat Reversible Causes</h3>
+                    <p class="text-sm text-gray-700"><i class="fas fa-search mr-2 text-blue-500"></i>Consider sepsis, electrolyte abnormalities (K+, Mg2+), thyrotoxicosis, alcohol excess, post-operative state.</p>
+                    <p class="text-sm text-gray-700"><i class="fas fa-syringe mr-2 text-blue-500"></i>Treat underlying cause. AF may resolve spontaneously. If AF persists, manage as per guidelines.</p>
+                </div>
+            </div>
+            <div class="mt-4 key-point p-4 rounded-lg">
+                <h3 class="font-semibold text-lg mb-1 text-blue-700">Initial Investigations</h3>
+                <p class="text-sm text-gray-700"><i class="fas fa-file-medical-alt mr-2 text-blue-500"></i>12-lead ECG (confirm AF, check for ischaemia, LVH, bundle branch block, WPW).</p>
+                <p class="text-sm text-gray-700"><i class="fas fa-tint mr-2 text-blue-500"></i>Bloods: FBC, U&Es, TFTs, LFTs, coagulation screen (if considering anticoagulation). Troponin if clinically indicated (chest pain/ischaemia suspected).</p>
+                <p class="text-sm text-gray-700"><i class="fas fa-x-ray mr-2 text-blue-500"></i>CXR if respiratory symptoms or signs of heart failure.</p>
+            </div>
+        </section>
+
+        <section class="section-card p-6">
+            <h2 class="text-xl md:text-2xl font-bold section-title mb-4 flex items-center">
+                <i class="fas fa-balance-scale icon-style mr-3 text-2xl"></i>Rhythm vs. Rate Control Decision
+            </h2>
+            <div class="key-point p-4 rounded-lg">
+                <p class="text-sm text-gray-700"><i class="fas fa-comments mr-2 text-blue-500"></i>Discuss options with the patient, considering their preferences, symptoms, and comorbidities.</p>
+                <div class="sub-section-title">Offer Rhythm Control If:</div>
+                <ul class="list-disc list-inside ml-4 text-sm text-gray-700 space-y-1">
+                    <li>AF onset < 48 hours.</li>
+                    <li>AF is causing haemodynamic instability (emergent cardioversion).</li>
+                    <li>Reversible cause identified and corrected, but AF persists.</li>
+                    <li>Patient preference for rhythm control and it's clinically appropriate.</li>
+                    <li>New-onset AF.</li>
+                    <li>Symptoms are unacceptable despite rate control.</li>
+                </ul>
+                 <div class="sub-section-title mt-2">Offer Rate Control If:</div>
+                <ul class="list-disc list-inside ml-4 text-sm text-gray-700 space-y-1">
+                    <li>AF onset > 48 hours or uncertain, and stable.</li>
+                    <li>Patient has no symptoms or minimal symptoms of AF.</li>
+                    <li>Significant structural heart disease (where rhythm control may be less successful or risky without specialist input).</li>
+                    <li>Patient preference for rate control.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-card p-6">
+            <h2 class="text-xl md:text-2xl font-bold section-title mb-4 flex items-center">
+                <i class="fas fa-wave-square icon-style mr-3 text-2xl"></i>Rhythm Control Strategy
+            </h2>
+            <div class="space-y-4">
+                <div class="alert-point p-3 rounded-md">
+                    <h3 class="font-semibold text-lg mb-1 text-yellow-700"><i class="fas fa-shield-alt mr-2"></i>Anticoagulation for Cardioversion:</h3>
+                    <ul class="list-disc list-inside ml-4 text-sm text-gray-700 space-y-1">
+                        <li><strong>AF onset < 48 hours & low stroke risk (CHA₂DS₂-VASc 0 for men, 1 for women):</strong> Cardioversion can be performed without prior anticoagulation. Start anticoagulation after cardioversion based on CHA₂DS₂-VASc.</li>
+                        <li><strong>AF onset < 48 hours & higher stroke risk:</strong> Offer anticoagulation at presentation. Cardioversion can proceed. Continue anticoagulation for at least 4 weeks post-cardioversion, then reassess.</li>
+                        <li><strong>AF onset > 48 hours or uncertain:</strong> Anticoagulate for at least 3 weeks before cardioversion OR perform TOE to exclude left atrial appendage thrombus. Continue anticoagulation for at least 4 weeks post-cardioversion, then reassess.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="sub-section-title text-lg mb-2">Methods:</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="key-point p-3 rounded-md">
+                            <h4 class="font-semibold text-md mb-1 text-blue-700"><i class="fas fa-bolt mr-2"></i>Electrical Cardioversion (DCCV)</h4>
+                            <p class="text-sm text-gray-700">Preferred if patient is haemodynamically unstable or if pharmacological cardioversion is contraindicated/failed. Usually requires sedation.</p>
+                        </div>
+                        <div class="key-point p-3 rounded-md">
+                            <h4 class="font-semibold text-md mb-1 text-blue-700"><i class="fas fa-pills mr-2"></i>Pharmacological Cardioversion</h4>
+                            <p class="text-sm text-gray-700"><strong>No structural heart disease:</strong> Flecainide (IV or oral). Caution if suspected atrial flutter.</p>
+                            <p class="text-sm text-gray-700"><strong>Structural heart disease (e.g., IHD, valvular disease, LV impairment):</strong> Amiodarone (IV). Slower onset.</p>
+                            <p class="text-sm text-gray-700">Beta-blocker co-prescription may be needed with flecainide if risk of 1:1 flutter conduction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-card p-6">
+            <h2 class="text-xl md:text-2xl font-bold section-title mb-4 flex items-center">
+                <i class="fas fa-sliders-h icon-style mr-3 text-2xl"></i>Rate Control Strategy
+            </h2>
+            <ul class="list-none space-y-3">
+                <li class="key-point p-3 rounded-md text-sm text-gray-700"><i class="fas fa-bullseye mr-2 text-blue-500"></i><strong>Initial Target Heart Rate:</strong> <110 bpm at rest. If symptoms persist or heart failure, aim for <80 bpm.</li>
+                <li class="key-point p-3 rounded-md text-sm text-gray-700"><i class="fas fa-prescription-bottle-alt mr-2 text-blue-500"></i><strong>First-Line Agents (monotherapy):</strong>
+                    <ul class="list-disc list-inside ml-4 mt-1">
+                        <li><strong>Beta-blocker</strong> (e.g., bisoprolol, metoprolol). Avoid in severe asthma or decompensated heart failure.</li>
+                        <li><strong>Rate-limiting Calcium Channel Blocker</strong> (e.g., diltiazem, verapamil). Avoid in heart failure with reduced ejection fraction (HFrEF).</li>
+                    </ul>
+                </li>
+                <li class="key-point p-3 rounded-md text-sm text-gray-700"><i class="fas fa-plus-circle mr-2 text-blue-500"></i><strong>Second-Line / Combination:</strong> If monotherapy fails, consider adding Digoxin. Specialist advice may be needed for combining beta-blocker and CCB.</li>
+                 <li class="alert-point p-3 rounded-md text-sm text-gray-700"><i class="fas fa-heart-broken mr-2 text-yellow-500"></i><strong>Heart Failure (HFrEF):</strong> Beta-blocker (once stable) or Digoxin. Avoid CCBs. Amiodarone can be used for rate control under specialist advice if other agents unsuitable/ineffective.</li>
+            </ul>
+        </section>
+
+        <section class="section-card p-6">
+            <h2 class="text-xl md:text-2xl font-bold section-title mb-4 flex items-center">
+                <i class="fas fa-tablets icon-style mr-3 text-2xl"></i>Anticoagulation for Stroke Prevention
+            </h2>
+            <ul class="list-none space-y-3">
+                <li class="key-point p-3 rounded-md text-sm text-gray-700"><i class="fas fa-calculator mr-2 text-blue-500"></i><strong>Assess Stroke Risk:</strong> Use CHA₂DS₂-VASc score.
+                    <ul class="list-disc list-inside ml-4 mt-1">
+                         <li>Score 0 (men) or 1 (women): Anticoagulation generally not indicated unless AF due to reversible cause and cardioversion planned.</li>
+                         <li>Score &ge;1 (men) or &ge;2 (women): Offer anticoagulation. (Note: NICE threshold is CHA₂DS₂-VASc &ge;2 for offering, but consider for men with 1). For practical ED purposes, if CHA₂DS₂-VASc indicates need, start or ensure plan.</li>
+                    </ul>
+                </li>
+                <li class="key-point p-3 rounded-md">
+                    <h4 class="font-semibold text-md mb-1 text-blue-700"><i class="fas fa-tint-slash mr-2"></i>Assess Bleeding Risk: Use ORBIT score.</h4>
+                    <div class="text-sm text-gray-700 space-y-1 mt-1">
+                        <div class="score-item"><span><strong>O</strong>lder Age (≥75 years)</span><span>1 point</span></div>
+                        <div class="score-item"><span><strong>R</strong>educed Hb/Hct/Anaemia history</span><span>2 points</span></div>
+                        <div class="score-item"><span><strong>B</strong>leeding History (major)</span><span>2 points</span></div>
+                        <div class="score-item"><span><strong>I</strong>nsufficient Renal Function (eGFR <60)</span><span>1 point</span></div>
+                        <div class="score-item"><span><strong>T</strong>reatment with Antiplatelet</span><span>1 point</span></div>
+                        <hr class="my-1 border-blue-300">
+                        <div class="score-item"><span><strong>Score 0-2:</strong> Low risk</span></div>
+                        <div class="score-item"><span><strong>Score 3:</strong> Medium risk</span></div>
+                        <div class="score-item"><span><strong>Score 4-7:</strong> High risk</span></div>
+                    </div>
+                    <p class="text-xs text-gray-600 mt-2">A high ORBIT score prompts caution, review of modifiable bleeding risk factors, and discussion. It is not an absolute contraindication to anticoagulation for most patients.</p>
+                </li>
+                <li class="key-point p-3 rounded-md text-sm text-gray-700"><i class="fas fa-pills mr-2 text-blue-500"></i><strong>Choice of Anticoagulant:</strong>
+                    <ul class="list-disc list-inside ml-4 mt-1">
+                        <li><strong>DOACs</strong> (apixaban, dabigatran, edoxaban, rivaroxaban) are generally preferred over warfarin. Consider patient factors, renal function, and interactions.</li>
+                        <li><strong>Warfarin</strong> if DOACs contraindicated or not suitable.</li>
+                    </ul>
+                </li>
+                <li class="alert-point p-3 rounded-md text-sm text-gray-700"><i class="fas fa-stopwatch mr-2 text-yellow-500"></i><strong>When to Start:</strong> Initiate as soon as possible once decision to anticoagulate is made, including in the ED if appropriate and safe, or ensure clear plan for initiation.</li>
+            </ul>
+        </section>
+
+        <section class="section-card p-6">
+            <h2 class="text-xl md:text-2xl font-bold section-title mb-4 flex items-center">
+                <i class="fas fa-hospital-user icon-style mr-3 text-2xl"></i>Admission & Referral
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="disposition-red p-4 rounded-lg">
+                    <h3 class="font-semibold text-lg mb-1 text-red-700"><i class="fas fa-procedures mr-2"></i>Consider ADMISSION if:</h3>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>Haemodynamically unstable.</li>
+                        <li>Serious underlying cause requiring admission (e.g., sepsis, PE, ACS).</li>
+                        <li>AF with features of Wolff-Parkinson-White syndrome (seek urgent cardiology advice).</li>
+                        <li>Uncontrolled symptoms despite initial ED management.</li>
+                        <li>High risk of stroke and anticoagulation needs urgent inpatient initiation/bridging.</li>
+                        <li>Significant comorbidities complicating management.</li>
+                        <li>Uncertainty about diagnosis or management plan.</li>
+                    </ul>
+                </div>
+                <div class="disposition-green p-4 rounded-lg">
+                    <h3 class="font-semibold text-lg mb-1 text-green-700"><i class="fas fa-clinic-medical mr-2"></i>Consider DISCHARGE with Follow-Up if:</h3>
+                     <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>Haemodynamically stable.</li>
+                        <li>Symptoms controlled (rate or rhythm).</li>
+                        <li>Underlying cause addressed or not acute.</li>
+                        <li>Appropriate anticoagulation plan in place (initiated or clear follow-up for initiation).</li>
+                        <li>Clear follow-up arranged (e.g., GP, anticoagulation clinic, cardiology outpatient within appropriate timeframe).</li>
+                        <li>Patient understands plan and red flags.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-card p-6 bg-gray-200">
+            <h2 class="text-lg font-semibold section-title mb-3 flex items-center text-gray-700">
+                <i class="fas fa-info-circle icon-style mr-3 text-xl"></i>Disclaimer
+            </h2>
+            <p class="text-sm text-gray-600">This infographic provides a summary based on general NICE principles (NG196) for the management of new-onset or acute atrial fibrillation in an emergency department setting in the UK. It is intended for educational purposes and quick reference. It does not replace full NICE guidelines or individual clinical judgement. Always refer to the latest full NICE guidelines and consult local protocols.</p>
+        </section>
+    </div>
+
+    <footer class="text-center p-4 text-gray-600 text-sm">
+        Summary based on general NICE clinical guidelines (NG196) for Atrial Fibrillation. Always consult official NICE resources and local pathways.
+    </footer>
+</body>
+</html>
